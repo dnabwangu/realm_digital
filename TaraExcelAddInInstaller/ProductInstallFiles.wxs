@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER" />
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ProductFilesComponentGroup">
+            <Component Id="cmp36203118F3CD2434AC41EEEBE74BC2CF" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filA512B213BAD89C2A2B5765EC4C0E9C78" KeyPath="yes" Source="$(var.AddinFiles)\ClosedXML.dll" />
+            </Component>
+            <Component Id="cmp2145060D1318A58437B9CEE4D0FB4B19" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filE1DAA67915BCAEC35A33CF22B18D05E4" KeyPath="yes" Source="$(var.AddinFiles)\ClosedXML.pdb" />
+            </Component>
+            <Component Id="cmp2543126D48A50EDA7AA5EA99E8F191AD" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil64EEF1D61768CA36FFBEE824C5CE4AFE" KeyPath="yes" Source="$(var.AddinFiles)\ClosedXML.xml" />
+            </Component>
+            <Component Id="cmp8E0BA9345D6467C6CE87127468E2DA60" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil425B2C707904C74CBB8D3C690296B481" KeyPath="yes" Source="$(var.AddinFiles)\DocumentFormat.OpenXml.dll" />
+            </Component>
+            <Component Id="cmp497857C5CC0A98968F92450C07017DCA" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filAE9C8B356AAE693C0D4EA8955655CE44" KeyPath="yes" Source="$(var.AddinFiles)\DocumentFormat.OpenXml.xml" />
+            </Component>
+            <Component Id="cmp657FC5FC3DD7C4BB7C841F2AB5180BD7" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil1272FEBA2B0EFB08583E85DA8A78A772" KeyPath="yes" Source="$(var.AddinFiles)\ExcelDataReader.DataSet.dll" />
+            </Component>
+            <Component Id="cmpCC28FF8F148A97EB4CDE4602B863A53E" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filD60B52DAFB29A140A32AB2C0211F74D4" KeyPath="yes" Source="$(var.AddinFiles)\ExcelDataReader.DataSet.xml" />
+            </Component>
+            <Component Id="cmp228F9964FA008B5F4A4F6E9E7DA92F76" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filCA9769704A38921CBB73B955E595D1F3" KeyPath="yes" Source="$(var.AddinFiles)\ExcelDataReader.dll" />
+            </Component>
+            <Component Id="cmp30B83E04B550BE536879918B8A20C4AB" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil2A3558E672D38F9327D4A030DB5E5818" KeyPath="yes" Source="$(var.AddinFiles)\ExcelDataReader.xml" />
+            </Component>
+            <Component Id="cmp72CD2E5C67E0B0F261A6D57B8E2ED654" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil7D257EC2D03DE91E3FBF03805F6AEA8C" KeyPath="yes" Source="$(var.AddinFiles)\FastMember.Signed.dll" />
+            </Component>
+            <Component Id="cmpB2B17ACEF2700EE632E3235C9A7F31D6" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil7DD976346409C4749E278EBDA66F3C64" KeyPath="yes" Source="$(var.AddinFiles)\Microsoft.Office.Tools.Common.dll" />
+            </Component>
+            <Component Id="cmpADCE48FF76E53DAC76A025E7648FD219" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filC534544B7397ACDA78680FA5A82ABBDC" KeyPath="yes" Source="$(var.AddinFiles)\Microsoft.Office.Tools.Common.v4.0.Utilities.dll" />
+            </Component>
+            <Component Id="cmp7688EF74DC3F4287CC0F8E45C28361D3" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil89563B50BBA53BB67252B47B8256AD06" KeyPath="yes" Source="$(var.AddinFiles)\Microsoft.Office.Tools.dll" />
+            </Component>
+            <Component Id="cmpCDE7AEA1B703BE1E0F8C94E8761D97CC" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil4E6438A8227CC959ADF904270BA6383A" KeyPath="yes" Source="$(var.AddinFiles)\Microsoft.Office.Tools.Excel.dll" />
+            </Component>
+            <Component Id="cmpEA6C7049A237974135B17BC5B0CC17F8" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil51AD879A1A5DB37DE3A0390B97234DAB" KeyPath="yes" Source="$(var.AddinFiles)\Microsoft.Office.Tools.v4.0.Framework.dll" />
+            </Component>
+            <Component Id="cmpF8C27209FCD62C606A43AFAE70D21064" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil998E848FF584F739B76BBFEF15DD79F6" KeyPath="yes" Source="$(var.AddinFiles)\Microsoft.VisualStudio.Tools.Applications.Runtime.dll" />
+            </Component>
+            <Component Id="cmpBC4FC00A26E7D32479D42D3411317FC5" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil90A8AAD9FC612906D405476D61CEA3F4" KeyPath="yes" Source="$(var.AddinFiles)\Newtonsoft.Json.dll" />
+            </Component>
+            <Component Id="cmp125C379E185231EFADA4CB4301BD0A9E" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil3A2F44A7730E98D18E0948B3261DFABD" KeyPath="yes" Source="$(var.AddinFiles)\Newtonsoft.Json.xml" />
+            </Component>
+            <Component Id="cmpDAB8FFA79512A71065E10BC895591A39" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil097B7121F24CF8111446F562ECD62549" KeyPath="yes" Source="$(var.AddinFiles)\Tara_app.dll" />
+            </Component>
+            <Component Id="cmp05C5DA5EE3852C846519D4331CDDA720" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filAFB0D466EC222BD6021EAAD0167CF5FA" KeyPath="yes" Source="$(var.AddinFiles)\Tara_app.dll.config" />
+            </Component>
+            <Component Id="cmp9A7A1B7E2FE1E1121DA9E18052502FE0" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filA18D81E9D914D75F1D5EAD3847B9951A" KeyPath="yes" Source="$(var.AddinFiles)\Tara_app.dll.manifest" />
+            </Component>
+            <Component Id="cmp32CB96315F884923E65FB84019CBB297" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="filACFA3C95298CC8FC8B8BAE4DB372CECD" KeyPath="yes" Source="$(var.AddinFiles)\Tara_app.pdb" />
+            </Component>
+            <Component Id="cmp2FF878C83AED7875B437B8A528CB98FE" Directory="INSTALLFOLDER" Guid="*">
+                <File Id="fil6FFA343437C1925F7E17929B113E34E2" KeyPath="yes" Source="$(var.AddinFiles)\Tara_app.vsto" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

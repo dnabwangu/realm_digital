@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="CE2CEA93-9DD3-4724-8FE3-FCBF0A0915C1"
+           Name="TARA Excel Add-In"
+           Language="1033"
+           Version="2.0.10.1"
+           Manufacturer="ai-Spark LLC"
+           UpgradeCode="b25c9012-5d4a-467e-a9af-de805c2d792d">
+
+    <Package InstallerVersion="200"
+             Compressed="yes"
+             InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+
+    <Media Id="1" Cabinet="TaraExcelAddIn.cab" EmbedCab="yes"/>
+
+    <Feature Id="ProductFeature" Title="TARA Excel Add-In" Level="1">
+      <ComponentGroupRef Id="ProductFilesComponentGroup" />
+      <ComponentRef Id="Registry_FriendlyName" />
+      <ComponentRef Id="Registry_Description" />
+      <ComponentRef Id="Registry_Manifest" />
+      <ComponentRef Id="Registry_LoadBehavior" />
+    </Feature>
+
+    <UI>
+      <UIRef Id="WixUI_InstallDir" />
+
+      <!-- Skip license dialog -->
+      <Publish Dialog="WelcomeDlg"
+               Control="Next"
+               Event="NewDialog"
+               Value="InstallDirDlg"
+               Order="2">1</Publish>
+      <Publish Dialog="InstallDirDlg"
+               Control="Back"
+               Event="NewDialog"
+               Value="WelcomeDlg"
+               Order="2">1</Publish>
+    </UI>
+    <WixVariable Id="WixUIDialogBmp" Value="Resources\installer-background.bmp" />
+    <WixVariable Id="WixUIBannerBmp" Value="Resources\installer-banner.bmp" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="TARA Excel Add-In" />
+        <Component Id="Registry_FriendlyName">
+          <RegistryValue Id="RegKey_FriendlyName" Root="HKCU"
+                         Key="Software\Microsoft\Office\Excel\AddIns\Tara_app"
+                         Name="FriendlyName"
+                         Value="TARA Excel Add-In"
+                         Type="string" KeyPath="yes" />
+        </Component>
+        <Component Id="Registry_Description">
+          <RegistryValue Id="RegKey_Description" Root="HKCU"
+                         Key="Software\Microsoft\Office\Excel\AddIns\Tara_app"
+                         Name="Description"
+                         Value="TARA Excel Add-In"
+                         Type="string" KeyPath="yes" />
+        </Component>
+        <Component Id="Registry_Manifest">
+          <RegistryValue Id="RegKey_Manifest" Root="HKCU"
+                         Key="Software\Microsoft\Office\Excel\AddIns\Tara_app"
+                         Name="Manifest" Value="[INSTALLFOLDER]Tara_app.vsto|vstolocal"
+                         Type="string" KeyPath="yes" />
+        </Component>
+        <Component Id="Registry_LoadBehavior">
+          <RegistryValue Id="RegKey_LoadBehavior" Root="HKCU"
+                         Key="Software\Microsoft\Office\Excel\AddIns\Tara_app"
+                         Name="LoadBehavior" Value="3"
+                         Type="integer" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </Directory>
+  </Fragment>
+
+</Wix>

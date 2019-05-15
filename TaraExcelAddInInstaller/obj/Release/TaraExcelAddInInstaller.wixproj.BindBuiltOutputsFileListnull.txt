@@ -1,0 +1,2 @@
+C:\Users\dnabw\OneDrive\documents\visual studio 2017\Projects\Tara_app\TaraExcelAddInInstaller\bin\Release\tara_v2.10.1.msi
+C:\Users\dnabw\OneDrive\documents\visual studio 2017\Projects\Tara_app\TaraExcelAddInInstaller\bin\Release\tara_v2.10.1.wixpdb

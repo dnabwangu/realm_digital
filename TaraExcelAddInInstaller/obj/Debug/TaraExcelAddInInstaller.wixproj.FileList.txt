@@ -1,0 +1,7 @@
+obj\Debug\Product.wixobj
+obj\Debug\ProductInstallFiles.wixobj
+obj\Debug\TaraExcelAddInInstaller.wixproj.BindContentsFileListnull.txt
+obj\Debug\TaraExcelAddInInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Debug\TaraExcelAddInInstaller.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\dnabw\OneDrive\documents\visual studio 2017\Projects\Tara_app\TaraExcelAddInInstaller\bin\Debug\tara_v2.10.1.msi
+C:\Users\dnabw\OneDrive\documents\visual studio 2017\Projects\Tara_app\TaraExcelAddInInstaller\bin\Debug\tara_v2.10.1.wixpdb
